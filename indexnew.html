@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dunrite Global Enterprises - Connecting US buyers with vetted global suppliers. Trade facilitation, sourcing, and logistics solutions.">
+    <meta name="keywords" content="global trade, import export, supplier sourcing, trade facilitation, international logistics">
+    <title>Dunrite Global Enterprises | Global Trade Facilitation</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #1a3a5c;
+            --secondary-blue: #2a5298;
+            --gold: #c9a961;
+            --orange: #ff6b35;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --text-dark: #333333;
+            --text-light: #666666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Header with Logo */
+        header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            padding: 2rem 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .logo-background {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .header-logo {
+            max-width: 280px;
+            height: auto;
+            display: block;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0a1929 0%, #0d2847 50%, #1a3a5c 100%);
+            color: var(--white);
+            padding: 5rem 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.03)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: bottom;
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease;
+            color: var(--white);
+            text-shadow: 
+                -2px -2px 0 #000,
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000,
+                0 0 15px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--white);
+            line-height: 1.8;
+            animation: fadeInUp 1s ease 0.2s backwards;
+            text-shadow: 
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000,
+                0 0 10px rgba(0,0,0,0.8);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.4s backwards;
+        }
+
+        .btn {
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-size: 1.2rem;
+        }
+
+        .btn-primary {
+            background: var(--orange);
+            color: var(--white);
+            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: #e55a2b;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.6);
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--white);
+            padding: 3rem 20px;
+            box-shadow: 0 -10px 30px rgba(0,0,0,0.05);
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            animation: fadeInUp 1s ease;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--orange);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 20px;
+        }
+
+        section:nth-child(even) {
+            background: var(--light-bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 1.5rem auto 0;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--orange), var(--gold));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* Regions */
+        .regions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .region-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-left: 5px solid var(--gold);
+            transition: all 0.3s ease;
+        }
+
+        .region-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .region-card h3 {
+            font-size: 1.8rem;
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+        }
+
+        .region-card ul {
+            list-style: none;
+        }
+
+        .region-card li {
+            padding: 0.7rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--text-dark);
+        }
+
+        .region-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--orange);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .region-value {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e0e0e0;
+            font-style: italic;
+            color: var(--text-light);
+        }
+
+        /* How It Works */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--orange), #ff8c5a);
+            color: var(--white);
+            border-radius: 50%;
+            line-height: 70px;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .step h3 {
+            font-size: 1.3rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .step p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Pricing Box */
+        .pricing-box {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: var(--white);
+            padding: 4rem 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 3rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(26, 58, 92, 0.3);
+        }
+
+        .pricing-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .pricing-box h3 {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .pricing-box p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+            line-height: 1.8;
+        }
+
+        .pricing-details {
+            max-width: 700px;
+            margin: 2rem auto;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+        }
+
+        .pricing-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .pricing-item h4 {
+            color: var(--gold);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-item p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Contact Form */
+        .contact-section {
+            background: var(--light-bg);
+        }
+
+        .contact-form {
+            max-width: 700px;
+            margin: 3rem auto;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--orange);
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        button[type="submit"] {
+            background: linear-gradient(135deg, var(--orange), #ff8c5a);
+            color: var(--white);
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        button[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+        }
+
+        button[type="submit"]:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .success-message, .error-message {
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 500;
+            display: none;
+        }
+
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 3rem 20px 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-logo {
+            height: 80px;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-bottom {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 1s ease;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .header-logo {
+                max-width: 250px;
+            }
+
+            .contact-form {
+                padding: 2rem 1.5rem;
+            }
+
+            .pricing-box {
+                padding: 3rem 2rem;
+            }
+
+            .pricing-details {
+                text-align: center;
+            }
+        }
+
+        /* Loading State */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo-background">
+            <img src="dunrite_global_logo.png" alt="Dunrite Global Enterprises" class="header-logo">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Connecting Global Excellence</h1>
+            <p>We bridge the gap between vetted international suppliers and US buyers, delivering seamless trade facilitation with transparent pricing and expert guidance.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get Started Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Global Regions</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">7</div>
+                <div class="stat-label">Step Vetting Process</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5-10%</div>
+                <div class="stat-label">Commission Rate</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Transparent Pricing</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Dunrite Global</h2>
+                <p>Your trusted partner in international trade facilitation, connecting US buyers with thoroughly vetted global suppliers across Europe, Latin America, and Asia.</p>
+            </div>
+            <p style="text-align: center; max-width: 900px; margin: 2rem auto; font-size: 1.1rem; line-height: 1.8; color: var(--text-light);">
+                Dunrite Global Enterprises specializes in streamlining international trade by handling every aspect of the sourcing process—from rigorous supplier verification and compliance management to logistics coordination and customs clearance. Our transparent pricing model ensures you know exactly what you're paying for, with no hidden fees or surprises.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Comprehensive trade facilitation solutions designed to simplify your global sourcing</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-icon">🔍</span>
+                    <h3>Supplier Vetting</h3>
+                    <p>Rigorous seven-step vetting process including certification verification, trade history review, and compliance analysis to ensure you work only with reliable, quality suppliers.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🚢</span>
+                    <h3>Logistics Coordination</h3>
+                    <p>Complete logistics management from supplier facility to your doorstep, including customs clearance, documentation, and freight forwarding.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">📋</span>
+                    <h3>Compliance Management</h3>
+                    <p>Expert guidance on tariff classification, import regulations, and documentation requirements to ensure smooth customs clearance.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">💼</span>
+                    <h3>Trade Facilitation</h3>
+                    <p>End-to-end trade facilitation services including negotiation, contract management, and payment processing for secure transactions.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🌐</span>
+                    <h3>Global Sourcing</h3>
+                    <p>Access to a curated network of suppliers across Europe, Latin America, and Asia offering competitive pricing and quality products.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🤝</span>
+                    <h3>Partnership Support</h3>
+                    <p>Ongoing support and relationship management to ensure long-term success and continuous improvement in your supply chain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regions Section -->
+    <section id="regions">
+        <div class="container">
+            <div class="section-title">
+                <h2>Product Categories by Region</h2>
+                <p>Strategic sourcing from three key global regions</p>
+            </div>
+            <div class="regions-grid">
+                <div class="region-card">
+                    <h3>🇪🇺 Europe</h3>
+                    <ul>
+                        <li>Pharmaceuticals</li>
+                        <li>Specialty Machinery</li>
+                        <li>Auto Parts & Components</li>
+                        <li>Luxury Goods</li>
+                        <li>Industrial Equipment</li>
+                    </ul>
+                    <p class="region-value">Vetted quality, guaranteed manufacturing standards, premium products</p>
+                </div>
+                <div class="region-card">
+                    <h3>🌎 Latin America</h3>
+                    <ul>
+                        <li>Agricultural Produce (Coffee, Soybeans)</li>
+                        <li>Vehicle Parts & Automotive</li>
+                        <li>Minerals & Raw Materials</li>
+                        <li>Sustainable Cosmetics</li>
+                        <li>Food & Beverage Products</li>
+                    </ul>
+                    <p class="region-value">Competitive costs, low tariffs, strategic proximity to US markets</p>
+                </div>
+                <div class="region-card">
+                    <h3>🌏 Asia</h3>
+                    <ul>
+                        <li>Electronics & Consumer Tech</li>
+                        <li>Solar Panels & Renewables</li>
+                        <li>High-Volume Textiles</li>
+                        <li>Tools & Machinery</li>
+                        <li>Manufacturing Equipment</li>
+                    </ul>
+                    <p class="region-value">Scale & diversification, competitive pricing, advanced manufacturing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p>Our streamlined 5-step process for seamless global trade</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Contact Us</h3>
+                    <p>Share your sourcing needs and product requirements with our team</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Supplier Match</h3>
+                    <p>We identify and vet qualified suppliers from our global network</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Review & Approve</h3>
+                    <p>Review supplier options, pricing, and terms before proceeding</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Place Order</h3>
+                    <p>We coordinate the entire procurement and logistics process</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Delivery</h3>
+                    <p>Products arrive at your doorstep, ready for business</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Transparent Pricing</h2>
+            </div>
+            <div class="pricing-box">
+                <h3>Transparent Tiered Pricing</h3>
+                <p>Professional service fees that scale with your order size. Minimum earnings guarantee: $1,500 per successful order.</p>
+                
+                <div class="pricing-details">
+                    <div class="pricing-item">
+                        <h4>Setup Service Fee: $1,000 (Non-Refundable)</h4>
+                        <p>One-time upfront fee to initiate the process. Covers our comprehensive 7-step supplier vetting, certification verification, compliance analysis, and logistics assessment. This is a <strong>service fee, not a deposit</strong> - it is not refunded or credited.</p>
+                    </div>
+                    
+                    <div class="pricing-item">
+                        <h4>Tiered Commission Structure</h4>
+                        <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                            <thead>
+                                <tr style="background: rgba(255,255,255,0.1);">
+                                    <th style="padding: 0.75rem; text-align: left; border-bottom: 2px solid rgba(255,255,255,0.2);">Order Value</th>
+                                    <th style="padding: 0.75rem; text-align: left; border-bottom: 2px solid rgba(255,255,255,0.2);">Commission Rate</th>
+                                    <th style="padding: 0.75rem; text-align: left; border-bottom: 2px solid rgba(255,255,255,0.2);">Total You Pay</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1);">$5,000 - $10,000</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1);">10%</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>$1,500 total</strong> ($1,000 setup + $500 commission)</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1);">$10,001 - $49,999</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1);">8%</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1);">$1,000 setup + 8% commission</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1);">$50,000 - $100,000</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1);">6%</td>
+                                    <td style="padding: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1);">$1,000 setup + 6% commission</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem;">$100,000+</td>
+                                    <td style="padding: 0.75rem;">5%</td>
+                                    <td style="padding: 0.75rem;">$1,000 setup + 5% commission</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="pricing-item">
+                        <h4>How It Works</h4>
+                        <p><strong>Step 1:</strong> Pay $1,000 non-refundable setup fee to begin<br>
+                        <strong>Step 2:</strong> We find and vet suppliers for your needs<br>
+                        <strong>Step 3:</strong> You review and approve suppliers<br>
+                        <strong>Step 4:</strong> You place your order<br>
+                        <strong>Step 5:</strong> Pay commission based on order value tier</p>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 2rem; font-size: 1.2rem; opacity: 0.95; font-weight: 600; background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 10px;">💡 <strong>Pricing Examples:</strong><br>
+                <strong>$5,000 order:</strong> $1,000 setup + $500 commission = <span style="color: var(--gold);">$1,500 total</span><br>
+                <strong>$10,000 order:</strong> $1,000 setup + $800 commission = <span style="color: var(--gold);">$1,800 total</span><br>
+                <strong>$50,000 order:</strong> $1,000 setup + $3,000 commission = <span style="color: var(--gold);">$4,000 total</span><br>
+                <strong>$100,000 order:</strong> $1,000 setup + $5,000 commission = <span style="color: var(--gold);">$6,000 total</span></p>
+                
+                <p style="margin-top: 1.5rem; font-size: 1rem; opacity: 0.9;"><strong>Minimum Order Value: $5,000</strong> | Our pricing typically saves you 15-25% on supplier costs, meaning you come out ahead while getting expert guidance through the entire process.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get Started Today</h2>
+                <p>Ready to expand your global sourcing? Contact us to discuss your needs</p>
+            </div>
+            <div class="contact-form">
+                <div class="success-message" id="successMessage">
+                    ✓ Thank you for your inquiry! We'll get back to you within 24 hours.
+                </div>
+                <div class="error-message" id="errorMessage">
+                    ✗ There was an error submitting your form. Please try again or email us directly.
+                </div>
+                <form id="contactForm" action="https://getform.io/f/bvrmqgjb" method="POST">
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiry-type">Inquiry Type *</label>
+                        <select id="inquiry-type" name="inquiry-type" required>
+                            <option value="">Select an option</option>
+                            <option value="buyer">I'm a US Buyer seeking suppliers</option>
+                            <option value="supplier">I'm a Supplier seeking US buyers</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Please describe your sourcing needs, product categories, or any questions you have..."></textarea>
+                    </div>
+                    <button type="submit" id="submitBtn">Send Inquiry</button>
+                </form>
+                <p style="text-align: center; margin-top: 2rem; font-size: 1rem; color: var(--text-light);">
+                    <strong>Email:</strong> <a href="mailto:dunriteglobalenterprises@gmail.com" style="color: var(--orange); text-decoration: none;">dunriteglobalenterprises@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="dunrite_global_logo.png" alt="Dunrite Global Logo" class="footer-logo">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dunrite Global Enterprises. All rights reserved.</p>
+                <p style="margin-top: 0.5rem;">Global Trade Facilitation | Connecting Buyers & Suppliers Worldwide</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission with Getform
+        const form = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+        const submitBtn = document.getElementById('submitBtn');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Disable button and show loading
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="loading"></span> Sending...';
+            
+            // Hide previous messages
+            successMessage.style.display = 'none';
+            errorMessage.style.display = 'none';
+            
+            try {
+                const formData = new FormData(form);
+                
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    successMessage.style.display = 'block';
+                    form.reset();
+                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                    }, 8000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                errorMessage.style.display = 'block';
+                errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Send Inquiry';
+            }
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .region-card, .step').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+
